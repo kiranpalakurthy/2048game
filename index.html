@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>2048 game</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="2048game_css.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="2048game_js.js"></script>
+
+</head>
+<body onload="newGame()">
+<div class="row">
+  <div class="col-xs-6 col-md-4"></div>
+  <div class="col-xs-6 col-md-4"><h1 align="left" class="header inline">2048</h1>  
+  <div class="btndefault inline">
+  <h5 class="textinside" align="center">SCORE</h5>
+  <p align="center" class="textinside" id="score">0</p>
+  </div>  
+  <div class="inline">
+  <p class="textline">Play 2048 Game Online</p>
+  <p class="secondline">
+  Join the numbers and get to the <b>2048 tile!</b></p>
+  </div>
+  <div class="inline" align="right">
+  <input type="Submit" class="btnrestart" onclick="newGame();" value="New Game"><h5 class = "textinside">New Game</h5></input>
+  </div>
+ <br><br>
+ <div id="division"></div>  
+ <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      
+      <div class="modal-body">
+        <h4 class="gameover">Game Over!</h4>
+      </div>
+      <div class="modal-footer">        
+        <button type="button" class="btn tryagain" onclick="newGame()">Try Again</button>
+      </div>
+    </div>
+  </div>
+</div>
+ <div class="col-xs-6 col-md-4"></div>
+</div>
+</body>
+</html>
